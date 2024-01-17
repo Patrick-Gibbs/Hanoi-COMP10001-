@@ -17,10 +17,10 @@ def hanoi(to, _from, via, n):
 
 
     if n == 1:
-        print(f'move a from {_from} to {to}')
+        print(f'move from {_from} to {to}')
     else:
         hanoi(via, _from, to, n-1)
         print(f'move from {_from} to {to}')
         hanoi(to, via, _from, n-1)
 
-hanoi('c', 'a', 'b', 3)
+hanoi('c', 'a', 'b', 24)
